@@ -1,0 +1,10 @@
+PROGRAMME exemple;
+const x := 10;
+const y := 'pomme'
+VAR nb;
+DEBUT
+ECRIRE('un nombre entier :'); {commentaire trop bien }
+LIRE(nb);
+ECRIRE();
+ECRIRE('carré : ', nb*nb);
+FIN
