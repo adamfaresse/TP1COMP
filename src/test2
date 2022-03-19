@@ -1,8 +1,11 @@
-{ VAR nb; }
+PROGRAMME exemple;
+CONST x = 2;
+VAR nb;
 DEBUT
     ECRIRE('Entrez un nombre entier');
-     LIRE(nb);
-     nb := nb*nb;
-     ECRIRE();
-     ECRIRE('Le carré du nombre est: ', nb);
-FIN
+    LIRE(nb);
+    nb := nb*nb;
+    ECRIRE();
+    ECRIRE('Le carré du nombre est: ', nb);
+FIN.
+
