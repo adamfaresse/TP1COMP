@@ -117,7 +117,7 @@ public class Analyseur {
             }
 
         }
-        LIRE_CAR();
+
 
         System.out.println("ch : "+CHAINE);
         return T_UNILEX.ch;
@@ -272,8 +272,14 @@ public class Analyseur {
         AnalyseurSyntaxique.NB_CONST_CHAINE = 0;
         AnalyseurSyntaxique.DERNIERE_ADRESSE_VAR_GLOB = -1;
         AnalyseurSyntaxique.VAL_DE_CONST_CHAINE = new String[10];
+        for (int i = 0; i <100 ; i++) {
+            AnalyseurSyntaxique.P_CODE.add(0);
+            Interpreteur.MEMVAR.add(0);
+        }
+
     }
     void TERMINER() throws IOException {
+        AnalyseurSyntaxique.P_CODE.set(AnalyseurSyntaxique.CO,Interpreteur.T_Interpreteur.STOP);
         scanner.close();
     }
     int CHERCHER(String nomIdentificateur){

@@ -1,9 +1,9 @@
 PROGRAMME exemple;
-const x = 'bonjour' , y = 12;
+const x = 10 , y = 12;
 VAR nb;
 DEBUT
 ECRIRE('un nombre entier :'); {commentaire trop bien }
 LIRE(nb);
 ECRIRE();
-ECRIRE('carré : ', nb*y);
+ECRIRE('carré : ', nb*nb);
 FIN.
