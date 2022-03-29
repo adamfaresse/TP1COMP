@@ -568,7 +568,7 @@ public class AnalyseurSyntaxique {
 
     }
     public static void main(String[] args) throws IOException,InterruptedException {
-        Analyseur analyseur = new Analyseur("C:\\Users\\stekf\\Desktop\\TPL3\\TP1COMP\\src\\test4");
+        Analyseur analyseur = new Analyseur("C:\\Users\\stekf\\Desktop\\TPL3\\TP1COMP\\src\\test3");
         AnalyseurSyntaxique analyseurSyntaxique = new AnalyseurSyntaxique(analyseur);
         Interpreteur interpreteur = new Interpreteur();
         analyseur.INITIALISER();
